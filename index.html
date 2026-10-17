@@ -12,47 +12,65 @@ body {
   padding: 24px;
   line-height: 1.6;
   color: #222;
+  overflow-wrap: anywhere;
 }
 h1, h2 { color: #c62828; }
+a { color: #b71c1c; }
 </style>
 </head>
 <body>
 
 <h1>Informativa sulla privacy di My</h1>
 
+<p><strong>Applicazione:</strong> My - scrivania digitale personale</p>
 <p><strong>Progetto:</strong> My Virtual Desk</p>
-<p><strong>Responsabile:</strong> Simone Sabadini</p>
-<p><strong>Email:</strong>
-<a href="mailto:mone.saba@gmail.com">mone.saba@gmail.com</a></p>
-<p><strong>Ultimo aggiornamento:</strong> 16 ottobre 2026</p>
+<p><strong>Titolare:</strong> Simone Sabadini</p>
+<p><strong>Email:</strong> <a href="mailto:mone.saba@gmail.com">mone.saba@gmail.com</a></p>
+<p><strong>Ultimo aggiornamento:</strong> 17 ottobre 2026</p>
 
 <h2>1. Informazioni generali</h2>
-<p>My è un'applicazione pensata per offrire una scrivania digitale personale, con funzioni per gestire note, appuntamenti, fotografie, video e documenti.</p>
+<p>My è un'applicazione pensata per offrire una scrivania digitale personale. Permette di organizzare note, appuntamenti, fotografie, video e documenti attraverso cassetti virtuali, compresa un'area privata protetta da codice.</p>
+<p>Questa informativa descrive come vengono gestiti i dati durante l'utilizzo dell'applicazione.</p>
 
 <h2>2. Dati gestiti dall'app</h2>
-<p>L'utente può inserire note, appuntamenti, descrizioni, fotografie, video, documenti e impostazioni personali. I contenuti inseriti possono contenere informazioni personali scelte dall'utente.</p>
+<p>L'utente può inserire o selezionare informazioni come note, appuntamenti, descrizioni, fotografie, video, documenti e impostazioni personali. Questi contenuti possono includere informazioni personali inserite direttamente dall'utente.</p>
+<p>L'app può inoltre gestire dati tecnici necessari al funzionamento delle sue funzioni, come le informazioni salvate nel database locale e le impostazioni delle notifiche.</p>
 
-<h2>3. Conservazione dei dati</h2>
-<p>L'app è progettata per gestire i propri contenuti principalmente sul dispositivo. Le modalità effettive di archiviazione e cancellazione devono essere verificate in relazione alla versione dell'app utilizzata.</p>
+<h2>3. Archiviazione e trasmissione dei dati</h2>
+<p>In base all'architettura del progetto esaminata, i contenuti creati nell'app vengono gestiti principalmente sul dispositivo, attraverso un database locale e file conservati nell'area dell'applicazione.</p>
+<p>La versione Android esaminata non dichiara il permesso INTERNET nel proprio manifest. Nel codice e nelle dipendenze esaminati non sono state individuate integrazioni riconoscibili per la sincronizzazione con un server, la pubblicità o l'analisi delle attività. Queste verifiche descrivono la versione esaminata e non costituiscono una garanzia assoluta per ogni possibile componente esterno o futura versione.</p>
+<p>L'applicazione non prevede un account personale né una sincronizzazione cloud gestita dal progetto. Le modalità di backup eventualmente offerte dal sistema operativo o dal dispositivo dipendono dalle impostazioni e dai servizi utilizzati dall'utente.</p>
 
 <h2>4. Cassetto segreto e sicurezza</h2>
-<p>L'app prevede un PIN di quattro cifre per proteggere l'accesso al cassetto segreto. Il codice dell'app conserva una versione sottoposta a hash del PIN. I file del cassetto segreto sono protetti tramite cifratura AES-GCM e la chiave viene conservata nell'archivio sicuro del dispositivo.</p>
-<p>Queste misure contribuiscono alla protezione dei dati, ma non garantiscono una sicurezza assoluta in ogni circostanza.</p>
+<p>Il cassetto segreto è protetto da un codice PIN di quattro cifre. Il progetto utilizza strumenti di archiviazione protetta per gestire il codice e la chiave di cifratura.</p>
+<p>I file salvati nell'area segreta vengono cifrati con AES-GCM. Quando l'utente decide di aprire un file, può essere creata una copia temporanea decifrata sul dispositivo per consentirne la visualizzazione, anche tramite un'altra applicazione compatibile.</p>
+<p>Queste misure sono progettate per aumentare la protezione dei contenuti. Nessun sistema può tuttavia garantire una sicurezza assoluta. È consigliabile proteggere il dispositivo e utilizzare un codice di sblocco sicuro.</p>
 
-<h2>5. Pubblicità e servizi esterni</h2>
-<p>L'app non è progettata per mostrare annunci pubblicitari. Le verifiche effettuate finora non hanno individuato integrazioni riconoscibili di servizi di analisi pubblicitaria. Le verifiche sulle eventuali comunicazioni esterne devono essere completate prima della pubblicazione definitiva.</p>
+<h2>5. Fotografie, video e documenti</h2>
+<p>L'utente può scegliere contenuti tramite le funzioni di selezione file e immagini disponibili sul dispositivo. I contenuti selezionati possono essere copiati nell'area di archiviazione dell'app per consentirne la gestione.</p>
+<p>Quando un contenuto viene aperto con un'applicazione esterna, tale applicazione può trattare i dati secondo le proprie regole e informative sulla privacy.</p>
 
-<h2>6. Permessi del dispositivo</h2>
-<p>Alcune funzioni possono richiedere l'accesso ai file scelti dall'utente o l'autorizzazione a mostrare notifiche locali. Le autorizzazioni dipendono dalle funzioni utilizzate e dalla versione di Android.</p>
+<h2>6. Notifiche</h2>
+<p>My può programmare notifiche locali, ad esempio in relazione agli appuntamenti. Le notifiche dipendono dai permessi concessi dall'utente e dalle impostazioni del dispositivo. L'utente può modificare tali permessi dalle impostazioni Android.</p>
 
-<h2>7. Cancellazione dei dati</h2>
-<p>I dati possono essere conservati localmente sul dispositivo. Prima di disinstallare l'app o cancellarne i dati dalle impostazioni Android, si consiglia di salvare altrove i contenuti importanti, se le funzioni disponibili lo consentono. La disinstallazione o la cancellazione dei dati dell'app può comportare la perdita dei contenuti locali.</p>
+<h2>7. Pubblicità e analisi</h2>
+<p>Nella versione esaminata non sono state individuate integrazioni riconoscibili per la pubblicità personalizzata o per strumenti di analisi delle attività dell'utente. Questa informazione si riferisce al codice e alle dipendenze controllati e potrà essere aggiornata se verranno introdotti nuovi servizi.</p>
 
-<h2>8. Modifiche all'informativa</h2>
-<p>Questa informativa potrà essere aggiornata in caso di modifiche alle funzioni dell'app o alle modalità di trattamento dei dati.</p>
+<h2>8. Conservazione e cancellazione dei dati</h2>
+<p>I contenuti creati nell'app sono conservati sul dispositivo secondo le modalità di archiviazione dell'applicazione. L'utente può eliminare i contenuti attraverso le funzioni disponibili nell'app, ove previste, oppure disinstallare l'app per rimuovere i dati locali associati, tenendo conto di eventuali backup o copie esterne.</p>
+<p>Prima di disinstallare l'app, si consiglia di salvare separatamente i contenuti che si desidera conservare. I file aperti tramite applicazioni esterne o esportati altrove potrebbero rimanere in tali posizioni.</p>
 
-<h2>9. Contatti</h2>
-<p>Per domande relative alla privacy è possibile contattare:</p>
+<h2>9. Diritti e richieste sulla privacy</h2>
+<p>Per domande sul trattamento dei dati personali o per richieste relative alla privacy, è possibile contattare il titolare all'indirizzo email indicato in questa pagina. Le richieste saranno valutate in base alla normativa applicabile e alle informazioni disponibili.</p>
+
+<h2>10. Minori</h2>
+<p>My non è progettata per raccogliere intenzionalmente dati personali di minori attraverso un servizio online gestito dal progetto. I genitori o tutori sono invitati a supervisionare l'utilizzo dell'app da parte dei minori.</p>
+
+<h2>11. Modifiche all'informativa</h2>
+<p>Questa informativa può essere aggiornata in caso di modifiche alle funzionalità dell'applicazione o alle modalità di gestione dei dati. La data in alto indica l'ultimo aggiornamento pubblicato.</p>
+
+<h2>12. Contatti</h2>
+<p>Per domande relative alla privacy:</p>
 <p><a href="mailto:mone.saba@gmail.com">mone.saba@gmail.com</a></p>
 
 </body>
